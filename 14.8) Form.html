@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 align="center">Job Application Form</h1>
+    <form action="" method="post">
+        <table border="2" align="center" rules="all" width="800" style="background-color:aliceblue;">
+            <tr>
+                <td>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; PERSONAL INFORMATION:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Full name</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name="f_nm" placeholder="First name" size="15" required>
+                    <input type="text" name="m_nm" placeholder="Middle name" size="15">
+                    <input type="text" name="l_nm" placeholder="Last name" size="15" required>
+                    <font style="color: red;">*</font>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Email Address</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="email" name="email" size="36" required>
+                    <font style="color: red;">*</font>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Phone Number</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="tel" name="phone" pattern="[0-9]{10}" required> 
+                    <font style="color: red;">*</font>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Date of Birth</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="date" name="date" required>
+                    <font style="color: red;">*</font>
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; ADDRESS INFORMATION:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Street Address</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                    <input type="text" name="Street address">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; City</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;
+                    <input type="text" name="city">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; State/Province</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name="state">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; ZIP/Postal Code</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="text" name="code">
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; EDUCATION:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Highest Degree Obtained</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <select name="highest degree">
+                        <option value="Select">Select</option>
+                        <option value="High School Diploma">High School Diploma</option>
+                        <option value="Bachelors Degree">Bachelors Degree</option>
+                        <option value="Masters Degree">Masters Degree</option> 
+                        <option value="Others">Others</option>   
+                    </select>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; School/University Name</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name="School/University name" size="30">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Graduation Year</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="number" name="graduation year" min="0">
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; Work Experience:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Company Name</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="text" name="company name">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Job Title</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp;
+                    <input type="text" name="job title">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Employment Start Date</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="date" name="emp_start date">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Employment End Date</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="date" name="emp_end date">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Job Responsibilities</label>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <textarea name="Job Responsility" rows="5" cols="40">
+                    </textarea>
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; Skills:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Technical Skills</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="skills[]">HTML/CSS
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="skills[]">JavaScript
+                    <br>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="skills[]">Python
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="checkbox" name="skills[]">Other
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Additional Skills</label>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <textarea name="Additional Skills" rows="5" cols="40">
+                    </textarea>
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; References:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Reference Name</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" name="Ref_name">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Reference Email</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="email" name="ref_email">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Reference Phone Number</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="tel" name="ref_num">
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; Additional Informations:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Salary Expectations</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="number" name="salary_num">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Are you legally authorised to work in the country?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Yes<input type="radio" name="y&n">
+                    &nbsp; &nbsp; &nbsp;
+                    No<input type="radio" name="y&n">
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><label><b>&nbsp; &nbsp; Attachments:</b></label></legend>
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Resume</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="file" name="file_resume">
+                    <br>
+                    <br>
+                    <label>&nbsp; &nbsp; Cover Letter</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <input type="file" name="file_letter">
+                    <br>
+                    <br>
+                </fieldset>
+                    <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    &nbsp; &nbsp; 
+                    <input type="submit" name="submit" value="Submit the Form">
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="reset" name="reset" value="&nbsp; Reset &nbsp;">
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
